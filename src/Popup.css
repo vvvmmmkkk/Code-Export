@@ -1,0 +1,220 @@
+/* --- Global Styles --- */
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap');
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* --- Main Popup Container --- */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(12, 12, 12, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  backdrop-filter: blur(4px);
+}
+
+.modal-content {
+  background-color: #292929;
+  color: #E0E0E0;
+  padding: 24px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 500px;
+  border: 1px solid #4a4a4a;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+/* --- Header Section --- */
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+.modal-header h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #FFFFFF;
+  margin: 0 0 8px 0;
+}
+.modal-header p {
+  font-size: 16px;
+  color: #A0A0A0;
+  margin: 0;
+  line-height: 1.4;
+}
+.close-button {
+  background: none;
+  border: none;
+  color: #C0C0C0;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0;
+  transition: color 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.close-button svg {
+  width: 28px;
+  height: 28px;
+}
+.close-button:hover {
+  color: #FFFFFF;
+}
+
+/* --- Container for Tabs and Checkboxes --- */
+.content-area {
+  background-color: #00000066;
+  border-radius: 12px;
+  padding: 8px 8px 16px 8px;
+}
+
+/* --- Tab Navigation --- */
+.tabs {
+  display: flex;
+  background-color: #292929;
+  border-radius: 8px;
+  border: 1px solid #292929; 
+  margin-bottom: 24px;
+  overflow: hidden; 
+}
+.tab-button {
+  flex: 1;
+  padding: 12px 14px;
+  border: none;
+  border-radius: 0;
+  background-color: #292929;
+  color: #FFFFFF;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+.tab-button.active {
+  background-color: #0E0E0F; 
+  color: #FFFFFF;
+  border: none;
+  border-radius: 6px; 
+}
+.tab-button:not(.active):hover {
+    background-color: #3a3a3a; 
+}
+
+/* --- Main Content Body --- */
+.modal-body {
+}
+.export-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.export-info span {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 16px;
+  color: #E0E0E0;
+  font-weight: 500;
+}
+.zipped-badge {
+  background-color: #3C3C3F;
+  color: #C0C0C0;
+  padding: 4px 12px;
+  border-radius: 9999px;
+  font-size: 15px;
+  font-weight: 500;
+  border: 1px solid #4A4A4A;
+}
+
+/* --- Checkbox Styling (Updated for SVG) --- */
+.checkbox-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.checkbox-container label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 16px;
+  color: #C0C0C0;
+}
+.checkbox-container input[type="checkbox"] {
+  display: none;
+}
+.custom-checkbox {
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border: 2px solid #606060;
+  border-radius: 6px;
+  margin-right: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+  color: white; 
+}
+.custom-checkbox svg {
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+.checkbox-container input[type="checkbox"]:checked + .custom-checkbox {
+  background-color: #7B61FF;
+  border-color: #7B61FF;
+}
+.checkbox-container input[type="checkbox"]:checked + .custom-checkbox svg {
+  opacity: 1;
+}
+
+/* --- Footer and Download Button --- */
+.modal-footer {
+  text-align: center;
+  margin-top: auto;
+  padding-top: 24px;
+}
+.modal-footer .download-button {
+  /* Default State */
+  background: linear-gradient(180deg, #444444 0%, #333333 100%);
+  color: #FFFFFF;
+  border: none; /* Removed all borders */
+  border-top: 1px solid #FFFFFF1A; /* Applied only to the top */
+  width: auto;
+  padding: 10px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.3);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 0.03em;
+}
+.modal-footer .download-button:hover {
+  background: linear-gradient(180deg, #555555 0%, #444444 100%);
+  border-color: #6a6a6a; /* This will not apply as border is set to none by default */
+}
+.modal-footer .download-button:active {
+  /* UPDATED: Pressed state */
+  border: 1px solid black; /* All 4 borders are now black */
+  box-shadow: inset 0px 1px 2px 0px #0000004D;
+  transform: none; /* No button motion */
+}

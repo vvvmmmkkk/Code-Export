@@ -1,6 +1,5 @@
 import React from 'react';
 
-// UPDATED: Using the exact HTML5 SVG from Figma
 const Html5Icon = () => (
   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
     <g clipPath="url(#clip0_1_116)">
@@ -14,7 +13,6 @@ const Html5Icon = () => (
   </svg>
 );
 
-// SVG component for the custom Next.js icon
 const NextJsNewIcon = () => (
     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M5.29752 7.5C3.10002 8.06667 1.66669 9.0375 1.66669 10.1458C1.66669 11.9017 5.33752 13.3333 9.87502 13.3333C10.4917 13.3333 10.925 13.3008 11.5 13.2525" stroke="currentColor" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -27,7 +25,6 @@ const NextJsNewIcon = () => (
   </svg>
 );
 
-// SVG component for the checkmark icon
 const CheckmarkIcon = () => (
   <svg width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M12.25 0C12.3685 0 12.4801 0.0250651 12.585 0.0751953C12.6898 0.120768 12.7809 0.18457 12.8584 0.266602C12.9404 0.344076 13.0042 0.435221 13.0498 0.540039C13.0999 0.644857 13.125 0.75651 13.125 0.875C13.125 1.12109 13.0407 1.32845 12.8721 1.49707L5.65332 8.71582C5.4847 8.88444 5.27734 8.96875 5.03125 8.96875C4.78516 8.96875 4.5778 8.88444 4.40918 8.71582L0.25293 4.55957C0.0843099 4.39095 0 4.18359 0 3.9375C0 3.81901 0.0227865 3.70736 0.0683594 3.60254C0.11849 3.49772 0.182292 3.40658 0.259766 3.3291C0.341797 3.24707 0.435221 3.18327 0.540039 3.1377C0.649414 3.08756 0.761068 3.0625 0.875 3.0625C1.12109 3.0625 1.32845 3.14681 1.49707 3.31543L5.03125 6.85645L11.6279 0.25293C11.7965 0.0843099 12.0039 0 12.25 0Z" fill="currentColor"/>

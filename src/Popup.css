@@ -1,4 +1,4 @@
-/* --- Global Styles --- */
+
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap');
 
@@ -138,7 +138,7 @@ body {
   border: 1px solid #4A4A4A;
 }
 
-/* --- Checkbox Styling (Updated for SVG) --- */
+/* --- Checkbox Styling--- */
 .checkbox-container {
   display: flex;
   flex-direction: column;
@@ -187,11 +187,10 @@ body {
   padding-top: 24px;
 }
 .modal-footer .download-button {
-  /* Default State */
   background: linear-gradient(180deg, #444444 0%, #333333 100%);
   color: #FFFFFF;
-  border: none; /* Removed all borders */
-  border-top: 1px solid #FFFFFF1A; /* Applied only to the top */
+  border: none; 
+  border-top: 1px solid #FFFFFF1A; 
   width: auto;
   padding: 10px 24px;
   border-radius: 6px;
@@ -210,11 +209,10 @@ body {
 }
 .modal-footer .download-button:hover {
   background: linear-gradient(180deg, #555555 0%, #444444 100%);
-  border-color: #6a6a6a; /* This will not apply as border is set to none by default */
+  border-color: #6a6a6a; 
 }
 .modal-footer .download-button:active {
-  /* UPDATED: Pressed state */
-  border: 1px solid black; /* All 4 borders are now black */
+  border: 1px solid black; 
   box-shadow: inset 0px 1px 2px 0px #0000004D;
-  transform: none; /* No button motion */
+  transform: none; 
 }
